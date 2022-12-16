@@ -17,9 +17,9 @@ class _InputScreenState extends State<InputScreen> {
           borderRadius: BorderRadius.circular(30),
           boxShadow: [
             BoxShadow(
-                blurRadius: 10,
-                spreadRadius: 7,
-                offset: Offset(1,1),
+                blurRadius: 5,
+                spreadRadius: 3,
+                offset: Offset(1,2),
                 color: Colors.grey.withOpacity(0.2)
             )
           ]
@@ -36,7 +36,7 @@ class _InputScreenState extends State<InputScreen> {
               borderRadius: BorderRadius.circular(30),
               borderSide: BorderSide(
                   color: Colors.white,
-                  width: 1.0
+                  width: 10.0
               ),
             ),
             border: OutlineInputBorder(

@@ -22,7 +22,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(child: ImageIcon(logo_registr, size: 100,),), // image logo
+              Container(child: ImageIcon(logo_registr, size: 100,color: AppColors.blue,),), // image logo
               Container(child: Text("Регистрация", style: AppStyleText.textStyle_1,),), // text avto
               SizedBox(height: 20,),
               Container(
@@ -42,11 +42,12 @@ class _RegistrScreenState extends State<RegistrScreen> {
                     SizedBox(height: 30,),
                     Container( child:
                     CircleAvatar(
-                      backgroundColor: Colors.grey.shade800,
+                      backgroundColor: AppColors.blue,
                       radius: 40,
                       child: Icon(Icons.arrow_forward_ios,color: Colors.white,),
                     )
                     ),
+                    SizedBox(height: 10,)
                   ],
                 ),
               ), // button
