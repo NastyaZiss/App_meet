@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
+import '../widgets/input.dart';
+import 'regist_screen.dart';
 
 import '../const/global_color.dart';
-import '../widgets/input.dart';
 
-class RegistrScreen extends StatefulWidget {
-  const RegistrScreen({Key? key}) : super(key: key);
+class InScreen extends StatefulWidget {
+  const InScreen({Key? key}) : super(key: key);
 
   @override
-  State<RegistrScreen> createState() => _RegistrScreenState();
+  State<InScreen> createState() => _InScreenState();
 }
 
-class _RegistrScreenState extends State<RegistrScreen> {
+class _InScreenState extends State<InScreen> {
   static const AssetImage logo_registr = AssetImage('assets/img/logo.png');
   @override
   Widget build(BuildContext context) {
@@ -22,20 +23,13 @@ class _RegistrScreenState extends State<RegistrScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(child: ImageIcon(logo_registr, size: 100,),), // image logo
-              Container(child: Text("Регистрация", style: AppStyleText.textStyle_1,),), // text avto
+              Container(child: ImageIcon(logo_registr, size: 100,),),
+              SizedBox(height: 30,), // image logo
+              Container(child: Text("Вход", style: AppStyleText.textStyle_1,),), // text avto
               SizedBox(height: 20,),
               Container(
                 child: Column(
                   children: [
-                    InputScreen(),
-                    SizedBox(height: 20,),
-                    InputScreen(),
-                    SizedBox(height: 20,),
-                    InputScreen(),
-                    SizedBox(height: 20,),
-                    InputScreen(),
-                    SizedBox(height: 20,),
                     InputScreen(),
                     SizedBox(height: 20,),
                     InputScreen(),
@@ -57,6 +51,3 @@ class _RegistrScreenState extends State<RegistrScreen> {
     );
   }
 }
-
-
-
