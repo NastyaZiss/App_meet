@@ -15,6 +15,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       body: Center(
         child: Padding(
@@ -29,6 +30,9 @@ class _RegistrScreenState extends State<RegistrScreen> {
                 child: Column(
                   children: [
                     InputScreen(),
+                    // TextField(
+                    //   decoration: InputDecoration(),
+                    // ),
                     SizedBox(height: 20,),
                     InputScreen(),
                     SizedBox(height: 20,),
