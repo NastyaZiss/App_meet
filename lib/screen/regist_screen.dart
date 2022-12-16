@@ -11,7 +11,7 @@ class RegistrScreen extends StatefulWidget {
 }
 
 class _RegistrScreenState extends State<RegistrScreen> {
-  static const AssetImage logo_registr = AssetImage('assets/img/logo.png');
+  static const AssetImage logo_registr = AssetImage('assets/img/users.png');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +23,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(child: ImageIcon(logo_registr, size: 100,color: AppColors.blue,),), // image logo
+              Container(child: ImageIcon(logo_registr, size: 50,color: AppColors.blue,),), // image logo
               Container(child: Text("Регистрация", style: AppStyleText.textStyle_1,),), // text avto
               SizedBox(height: 20,),
               Container(
@@ -33,17 +33,17 @@ class _RegistrScreenState extends State<RegistrScreen> {
                     // TextField(
                     //   decoration: InputDecoration(),
                     // ),
-                    SizedBox(height: 20,),
+                    SizedBox(height: 17,),
+                    InputScreen(),
+                    SizedBox(height: 17,),
+                    InputScreen(),
+                    SizedBox(height: 17,),
+                    InputScreen(),
+                    SizedBox(height: 17,),
+                    InputScreen(),
+                    SizedBox(height: 17,),
                     InputScreen(),
                     SizedBox(height: 20,),
-                    InputScreen(),
-                    SizedBox(height: 20,),
-                    InputScreen(),
-                    SizedBox(height: 20,),
-                    InputScreen(),
-                    SizedBox(height: 20,),
-                    InputScreen(),
-                    SizedBox(height: 30,),
                     Container( child:
                     CircleAvatar(
                       backgroundColor: AppColors.blue,
